@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Потребительские предпочтения</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myjavascript.js"></script>
+
+</head>
+<body>
+
+<form name = "myForm"  method = "get">
+<fieldset>
+        <legend>Опрос покупателей мобильных телефонов</legend>
+    <div class="field">
+            <label for="txt1">Ваше имя</label>
+            <input type="text" name="p1" id="txt1"  value="Тут Ваше Имя">
+</div>
+    <div class="field">
+        <label for="g1">Ваше пол</label>
+        <label><input type="radio" name="gender" id="g1" value="мужской">мужской</label>
+        <label><input type="radio" name="gender" value="женский">женский</label>
+        </div>
+    <div class="field">
+            <label for="txt3">Какой Вы предпочитаете телефон?</label>
+        <select name="model" id="txt3">
+            <option value="LG">LG</option>
+            <option value="HTC">HTC</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Apple">Apple</option>
+            <option value="ZTE">ZTE</option>
+        </select>
+        </div>
+    <div class="field">
+            <label for="l2">Цвет корпуса</label>
+        <br>
+        <label><input type="checkbox" name="lang" value="розовый" id="l2">розовый</label><br>
+        <label><input type="checkbox" name="lang" value="белый" >белый</label><br>
+        <label><input type="checkbox" name="lang" value="голубой">голубой</label><br>
+        <label><input type="checkbox" name="lang" value="золотистый">золотистый</label><br>
+        <label><input type="checkbox" name="lang" value="чёрный" >чёрный</label>
+        </div>
+    <div class="field">
+        Каковы Ваши пожелания?<textarea name="about"></textarea>
+        </div>
+<br>
+        <div class="block">
+            <a href="javascript:sendForm()" class ="button1">Отправить</a>
+             <a href="javascript:resetForm()" class ="button2">Сбросить</a>
+        </div>
+   <br>
+</fieldset>
+    </form>
+</body>
+</html>
